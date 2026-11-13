@@ -1,0 +1,418 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Massagens e Drenagem - Ana Beauty</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: PINK; (180deg, #fff0f5, #ffe4ec, #ffd6e7, #ffc2d6);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+section {
+    padding: 55px 20px 70px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cabecalho span {
+    letter-spacing: 4px;
+    color: #d17ba3;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cabecalho h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 12px 0;
+    color: #4A1A3A;
+}
+
+.cabecalho h1 span {
+    color: #e75491;
+    font-style: italic;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.detalhe {
+    width: 65px;
+    height: 2px;
+    background: #e75491;
+    margin: 20px auto;
+}
+
+.descricao {
+    color: #80566d;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(209, 123, 163, 0.20);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(209, 123, 163, 0.28);
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.conteudo {
+    padding: 25px;
+}
+
+.etiqueta {
+    display: inline-block;
+    background: #ffe4ec;
+    color: #d94f89;
+    padding: 7px 14px;
+    border-radius: 25px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.conteudo h3 {
+    margin: 15px 0 10px;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: normal;
+    color: #4A1A3A;
+}
+
+.conteudo h3 span {
+    color: #e75491;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.conteudo p {
+    color: #80566d;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.beneficios {
+    background: #fff0f5;
+    border-radius: 14px;
+    padding: 13px;
+    font-size: 12px;
+    color: #80566d;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.agendamento {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.valor {
+    min-width: 95px;
+}
+
+.valor span {
+    font-size: 11px;
+    color: #9a7a82;
+}
+
+.preco {
+    font-size: 27px;
+    font-weight: 700;
+    color: #e75491;
+}
+
+.botao {
+    flex: 1;
+    display: block;
+    background: #e75491;
+    color: white;
+    padding: 13px 10px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #c93678;
+}
+
+/* MENSAGEM FINAL */
+
+.mensagem {
+    background: white;
+    border-radius: 26px;
+    padding: 35px 25px;
+    margin: 50px auto 10px;
+    max-width: 750px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(209, 123, 163, 0.20);
+    border: 1px solid #ffe0eb;
+}
+
+.mensagem h2 {
+    font-family: Georgia, serif;
+    color: #4A1A3A;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.mensagem p {
+    color: #80566d;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 550px;
+    margin: auto;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+@media (max-width: 600px) {
+
+    .cabecalho h1 {
+        font-size: 30px;
+    }
+
+    .cabecalho h1 span {
+        font-size: 30px;
+    }
+
+    .servicos {
+        grid-template-columns: 1fr;
+    }
+
+    .agendamento {
+        flex-wrap: wrap;
+    }
+
+    .botao {
+        min-width: 100%;
+    }
+
+    .mensagem {
+        padding: 25px 18px;
+        margin-top: 35px;
+    }
+
+    .mensagem h2 {
+        font-size: 24px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section>
+
+<div class="container">
+
+    <div class="cabecalho">
+
+        <span>ANA BEAUTY SPA</span>
+
+        <h1>
+            Massagens e <span>Drenagem</span>
+        </h1>
+
+        <div class="detalhe"></div>
+
+        <p class="descricao">
+            Momentos de cuidado, relaxamento e bem-estar.
+            Conheça nossos tratamentos especiais e escolha
+            o cuidado ideal para você.
+        </p>
+
+    </div>
+
+    <div class="servicos">
+
+        <!-- DRENAGEM LINFÁTICA -->
+
+        <div class="card">
+
+            <img src="drenagemlinfatica.jpg" alt="Drenagem Linfática">
+
+            <div class="conteudo">
+
+                <span class="etiqueta">CREME NEUTRO</span>
+
+                <h3>
+                    Drenagem <span>Linfática</span>
+                </h3>
+
+                <p>
+                    Técnica suave com cremes neutros hipoalergênicos.
+                    Auxilia na redução do inchaço e da retenção de líquidos,
+                    proporcionando sensação de leveza e relaxamento.
+                </p>
+
+                <div class="beneficios">
+                    ✓ Auxilia na circulação<br>
+                    ✓ Ajuda a reduzir o inchaço<br>
+                    ✓ Sensação de leveza e bem-estar
+                </div>
+
+                <div class="agendamento">
+
+                    <div class="valor">
+                        <span>A partir de</span>
+                        <div class="preco">R$70</div>
+                    </div>
+
+                    <a class="botao"
+                    href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar%20Drenagem%20Linfática"
+                    target="_blank">
+                        AGENDAR
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- MASSAGEM MODELADORA -->
+
+        <div class="card">
+
+            <img src="Drenomodeladora-800x800.png" alt="Massagem Modeladora">
+
+            <div class="conteudo">
+
+                <span class="etiqueta">CAFEÍNA + GENGIBRE + CASTANHA</span>
+
+                <h3>
+                    Massagem <span>Modeladora</span>
+                </h3>
+
+                <p>
+                    Massagem realizada com cremes específicos de
+                    cafeína, gengibre e castanha-da-índia.
+                    Ajuda a melhorar a aparência da pele e proporciona
+                    uma experiência de cuidado corporal.
+                </p>
+
+                <div class="beneficios">
+                    ✨ Cuidado corporal<br>
+                    ✨ Auxilia na aparência da pele<br>
+                    ✨ Sensação de bem-estar
+                </div>
+
+                <div class="agendamento">
+
+                    <div class="valor">
+                        <span>A partir de</span>
+                        <div class="preco">R$85</div>
+                    </div>
+
+                    <a class="botao"
+                    href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar%20Massagem%20Modeladora"
+                    target="_blank">
+                        AGENDAR
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MENSAGEM FINAL -->
+
+    <div class="mensagem">
+
+        <h2>Você merece esse momento!</h2>
+
+        <div class="detalhe"></div>
+
+        <p>
+          Tire um tempo para você, renove suas energias
+        e cuide da sua beleza com carinho.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+<a class="whatsapp"
+href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar"
+target="_blank">
+💬
+</a>
+
+</body>
+</html>

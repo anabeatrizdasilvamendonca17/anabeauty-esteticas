@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Depilação</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: pink;
+    font-family: Arial;
+    color: #7A1145;
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+.apresentacao span {
+    color: #D16A8A;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.apresentacao h2 {
+    font-family: 'Playfair Display';
+    font-size: 35px;
+    color: #7A1145;
+    margin: 15px 0;
+}
+
+.apresentacao p {
+    color: #9A4A6E;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* CONTEÚDO */
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.servico {
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    flex: 1;
+    box-shadow: 0 8px 25px rgba(122,17,69,0.12);
+    margin-bottom: 35px;
+    transition: 0.3s;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+}
+
+.servico img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.informacao {
+    padding: 25px;
+}
+
+.informacao h3 {
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    color: #7A1145;
+    margin-bottom: 12px;
+}
+
+.informacao p {
+    color: #9A4A6E;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* SELOS */
+
+.selo {
+    display: inline-block;
+    background: #FFE4EC;
+    color: #D16A8A;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* DETALHES */
+
+.detalhe {
+    background: #FFF0F5;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 2;
+    color: #9A4A6E;
+}
+
+/* PREÇOS */
+
+.preco {
+    color: #FF2E8A;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 18px;
+}
+
+.preco small {
+    font-size: 11px;
+    color: #9A4A6E;
+    display: block;
+    font-weight: normal;
+}
+
+/* BOTÕES */
+
+.botao {
+    display: block;
+    background: #FF2E8A;
+    color: white;
+    padding: 14px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.botao:hover {
+    background: #7A1145;
+}
+
+/* FRASE FINAL */
+
+.mensagem {
+    text-align: center;
+    padding: 35px 20px;
+    background: white;
+    border-radius: 20px;
+    margin: 15px 0 35px;
+}
+
+.mensagem h2 {
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    color: #7A1145;
+    margin-bottom: 12px;
+}
+
+.mensagem p {
+    color: #9A4A6E;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 17px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 25px;
+    box-shadow: 0 5px 15px #999;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .apresentacao h2 {
+        font-size: 28px;
+    }
+
+    .servicos {
+        flex-direction: column;
+    }
+
+    .servico img {
+        height: 240px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- APRESENTAÇÃO -->
+
+<div class="apresentacao">
+
+    <span>PELE LISINHA E BEM CUIDADA</span>
+
+    <h2>Depilação com carinho e delicadeza</h2>
+
+    <p>
+        Cuide da sua pele com nossos procedimentos de depilação.
+        Mais conforto, beleza e autoestima em cada detalhe.
+        Sua beleza merece atenção especial!
+    </p>
+
+</div>
+
+<!-- SERVIÇOS -->
+
+<div class="container">
+
+<div class="servicos">
+
+    <!-- DEPILAÇÃO COM CERA -->
+
+    <div class="servico">
+
+        <img src="cera.jpg" alt="Depilação com cera">
+
+        <div class="informacao">
+
+            <span class="selo">CUIDADO TRADICIONAL</span>
+
+            <h3>Depilação com Cera</h3>
+
+            <p>
+                Uma técnica tradicional para remover os pelos
+                desde a raiz, proporcionando uma pele mais
+                lisinha e macia por mais tempo.
+            </p>
+
+            <div class="detalhe">
+                ✓ Axilas<br>
+                ✓ Buço<br>
+                ✓ Pernas<br>
+                ✓ Virilha<br>
+                ✓ Depilação completa
+            </div>
+
+            <div class="preco">
+                <small>A partir de</small>
+                R$40
+            </div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar%20Depilação%20com%20Cera">
+            AGENDAR CERA
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- DEPILAÇÃO A LASER -->
+
+    <div class="servico">
+
+        <img src="laser.jpg" alt="Depilação a laser">
+
+        <div class="informacao">
+
+            <span class="selo">TECNOLOGIA E CUIDADO</span>
+
+            <h3>Depilação a Laser</h3>
+
+            <p>
+                Um tratamento moderno que ajuda a reduzir
+                progressivamente os pelos, proporcionando
+                mais praticidade e liberdade no dia a dia.
+            </p>
+
+            <div class="detalhe">
+                ✓ Buço<br>
+                ✓ Axilas<br>
+                ✓ Virilha<br>
+                ✓ Meia perna<br>
+                ✓ Perna completa
+            </div>
+
+            <div class="preco">
+                <small>A partir de</small>
+                R$89
+            </div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar%20Depilação%20a%20Laser">
+            AGENDAR LASER
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MENSAGEM FINAL -->
+
+
+<div class="mensagem">
+
+    <h2>Você merece esse momento!</h2>
+
+    <p>
+        Tire um tempo para você, renove suas energias
+        e cuide da sua beleza com carinho.
+    </p>
+
+</div>
+
+</div>
+
+
+<a class="whatsapp"
+href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar">
+💬
+</a>
+
+</body>
+</html>

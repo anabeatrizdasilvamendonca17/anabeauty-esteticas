@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sobrancelha - Ana Beauty</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: pink;(180deg, #fff0f5, #ffe4ec, #ffd6e7, #ffc2d6);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 55px 20px 25px;
+}
+
+.cabecalho h1 {
+    font-family: Georgia, serif;
+    font-size: 43px;
+    color: #4A1A3A;
+    letter-spacing: 8px;
+    font-weight: normal;
+}
+
+.cabecalho p {
+    color: #c94f83;
+    letter-spacing: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.detalhe {
+    width: 65px;
+    height: 2px;
+    background: #d17ba3;
+    margin: 22px auto;
+}
+
+.introducao {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 20px 25px;
+}
+
+.introducao h2 {
+    color: #4A1A3A;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.introducao p {
+    color: #80566d;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.servicos {
+    max-width: 1150px;
+    margin: auto;
+    padding: 25px 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(150, 70, 110, 0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 35px rgba(150, 70, 110, 0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.conteudo {
+    padding: 25px 18px;
+}
+
+.conteudo h3 {
+    color: #4A1A3A;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.conteudo p {
+    color: #80566d;
+    font-size: 13px;
+    line-height: 1.6;
+    min-height: 40px;
+}
+
+.preco {
+    font-size: 28px;
+    color: #e75491;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.botao {
+    display: block;
+    background: #e75491;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #c93678;
+}
+
+/* MENSAGEM FINAL */
+
+.mensagem {
+    background: white;
+    border-radius: 26px;
+    padding: 35px 25px;
+    margin: 30px auto 55px;
+    max-width: 750px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(209, 123, 163, 0.20);
+    border: 1px solid #ffe0eb;
+}
+
+.mensagem h2 {
+    color: #4A1A3A;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.mensagem p {
+    color: #80566d;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 550px;
+    margin: auto;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+@media (max-width: 600px) {
+
+    .cabecalho h1 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .servicos {
+        grid-template-columns: 1fr;
+    }
+
+    .mensagem {
+        padding: 25px 18px;
+    }
+
+    .mensagem h2 {
+        font-size: 24px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cabecalho">
+
+    <h1>SOBRANCELHA</h1>
+
+    <p>DELICADA • PERFEITA • ANA BEAUTY</p>
+
+    <div class="detalhe"></div>
+
+</div>
+
+<div class="introducao">
+
+    <h2>Realce sua beleza natural</h2>
+
+    <p>
+        Cuide do seu olhar com procedimentos especiais para
+        valorizar o formato do seu rosto e destacar sua beleza.
+        Escolha seu serviço e agende seu horário!
+    </p>
+
+</div>
+
+<div class="servicos">
+
+    <div class="card">
+
+        <img src="imagem6.jpeg" alt="Design Simples">
+
+        <div class="conteudo">
+
+            <h3>Design Simples</h3>
+
+            <p>
+                Modelagem das sobrancelhas para valorizar
+                o formato natural do seu rosto.
+            </p>
+
+            <div class="preco">R$40</div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20Design%20Simples%20R$40"
+            target="_blank">
+            AGENDAR
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <img src="images.jpeg" alt="Design com Henna">
+
+        <div class="conteudo">
+
+            <h3>Design com Henna</h3>
+
+            <p>
+                Preenchimento com henna para deixar
+                as sobrancelhas mais definidas.
+            </p>
+
+            <div class="preco">R$60</div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Quero%20Design%20com%20Henna%20R$60"
+            target="_blank">
+            AGENDAR
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <img src="images (1).jpeg" alt="Brow Lamination">
+
+        <div class="conteudo">
+
+            <h3>Brow Lamination</h3>
+
+            <p>
+                Técnica que alinha os fios e proporciona
+                um visual moderno e elegante.
+            </p>
+
+            <div class="preco">R$90</div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Quero%20Brow%20Lamination%20R$90"
+            target="_blank">
+            AGENDAR
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <img src="imagem7.jpeg" alt="Micropigmentação">
+
+        <div class="conteudo">
+
+            <h3>Micropigmentação</h3>
+
+            <p>
+                Técnica para realçar e preencher
+                as sobrancelhas com mais definição.
+            </p>
+
+            <div class="preco">R$180</div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Quero%20Micropigmentacao%20R$180"
+            target="_blank">
+            AGENDAR
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MENSAGEM FINAL -->
+
+<div class="mensagem">
+
+    <h2>Você merece esse momento!</h2>
+
+    <div class="detalhe"></div>
+
+    <p>
+Tire um tempo para você, renove suas energias
+        e cuide da sua beleza com carinho.
+    </p>
+
+</div>
+
+<a class="whatsapp"
+href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar"
+target="_blank">
+💬
+</a>
+
+</body>
+</html>
+
+
+

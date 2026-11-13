@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bronzeamento</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: pink;
+    font-family: Arial;
+    color: #7A1145;
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+.apresentacao span {
+    color: #D16A8A;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.apresentacao h1 {
+    font-family: 'Playfair Display';
+    font-size: 38px;
+    color: #7A1145;
+    margin: 15px 0;
+    letter-spacing: 3px;
+}
+
+.apresentacao p {
+    color: #9A4A6E;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.servico {
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    flex: 1;
+    box-shadow: 0 8px 25px rgba(122,17,69,0.12);
+    margin-bottom: 35px;
+    transition: 0.3s;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+}
+
+.servico img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+/* INFORMAÇÕES */
+
+.informacao {
+    padding: 25px;
+    text-align: center;
+}
+
+.selo {
+    display: inline-block;
+    background: #FFE4EC;
+    color: #D16A8A;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.informacao h2 {
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    color: #7A1145;
+    margin-bottom: 12px;
+}
+
+.informacao p {
+    color: #9A4A6E;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* DETALHES */
+
+.detalhe {
+    background: #FFF0F5;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 2;
+    color: #9A4A6E;
+}
+
+/* PREÇOS */
+
+.preco {
+    color: #FF2E8A;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0 20px;
+}
+
+.preco small {
+    font-size: 11px;
+    color: #9A4A6E;
+    display: block;
+    font-weight: normal;
+}
+
+/* BOTÕES */
+
+.botao {
+    display: block;
+    background: #FF2E8A;
+    color: white;
+    padding: 14px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.botao:hover {
+    background: #7A1145;
+}
+
+/* MENSAGEM FINAL */
+
+.mensagem {
+    text-align: center;
+    padding: 35px 20px;
+    background: white;
+    border-radius: 20px;
+    margin: 15px 0 35px;
+}
+
+.mensagem h2 {
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    color: #7A1145;
+    margin-bottom: 12px;
+}
+
+.mensagem p {
+    color: #9A4A6E;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 17px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 25px;
+    box-shadow: 0 5px 15px #999;
+}
+
+/* CELULAR */
+
+@media (max-width: 750px) {
+
+    .apresentacao h1 {
+        font-size: 29px;
+    }
+
+    .servicos {
+        flex-direction: column;
+    }
+
+    .servico img {
+        height: 240px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- APRESENTAÇÃO -->
+
+<div class="apresentacao">
+
+    <span>BELEZA • BRONZE • AUTOESTIMA</span>
+
+    <h1>Bronzeamento</h1>
+
+    <p>
+        Conquiste um bronzeado lindo e valorize ainda mais
+        sua beleza. Escolha o procedimento ideal para você
+        e aproveite seu momento de cuidado!
+    </p>
+
+</div>
+
+<!-- SERVIÇOS -->
+
+<div class="container">
+
+<div class="servicos">
+
+    <!-- BRONZE NATURAL DE FITA -->
+
+    <div class="servico">
+
+        <img src="fita.jpg" alt="Bronzeamento natural de fita">
+
+        <div class="informacao">
+
+            <span class="selo">EFEITO NATURAL</span>
+
+            <h2>Natural de Fita</h2>
+
+            <p>
+                Bronzeamento com marcação de fita,
+                ideal para quem deseja um bronzeado
+                bonito e com marquinhas definidas.
+            </p>
+
+            <div class="detalhe">
+                ✓ Marquinhas definidas<br>
+                ✓ Resultado personalizado<br>
+                ✓ Momento de autocuidado
+            </div>
+
+            <div class="preco">
+                <small>Valor do procedimento</small>
+                R$50
+            </div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar%20Bronze%20Natural%20de%20Fita">
+            AGENDAR AGORA
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- BRONZE A JATO -->
+
+    <div class="servico">
+
+        <img src="bronzeamento.jpg" alt="Bronzeamento a jato">
+
+        <div class="informacao">
+
+            <span class="selo">PRATICIDADE E BELEZA</span>
+
+            <h2>Bronzeamento a Jato</h2>
+
+            <p>
+                Uma opção prática para conquistar
+                um tom bronzeado sem precisar de
+                exposição aos raios solares.
+            </p>
+
+            <div class="detalhe">
+                ✓ Aplicação uniforme<br>
+                ✓ Tom personalizado<br>
+                ✓ Sem exposição ao sol
+            </div>
+
+            <div class="preco">
+                <small>Valor do procedimento</small>
+                R$80
+            </div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar%20Bronzeamento%20a%20Jato">
+            AGENDAR AGORA
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- BRONZE DE GEL -->
+
+    <div class="servico">
+
+        <img src="gel.jpg" alt="Bronzeamento de gel">
+
+        <div class="informacao">
+
+            <span class="selo">CUIDADO ESPECIAL</span>
+
+            <h2>Bronzeamento de Gel</h2>
+
+            <p>
+                Uma opção para valorizar o visual
+                com um bronzeado bonito e um acabamento
+                especial para sua pele.
+            </p>
+
+            <div class="detalhe">
+                ✓ Aplicação cuidadosa<br>
+                ✓ Beleza e autoestima<br>
+                ✓ Atendimento personalizado
+            </div>
+
+            <div class="preco">
+                <small>Valor do procedimento</small>
+                R$70
+            </div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar%20Bronzeamento%20de%20Gel">
+            AGENDAR AGORA
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="mensagem">
+
+    <h2>Você merece esse momento!</h2>
+
+    <p>
+        Tire um tempo para você, renove suas energias
+        e cuide da sua beleza com carinho.
+    </p>
+
+</div>
+
+</div>
+
+
+<a class="whatsapp"
+href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar">
+💬
+</a>
+
+</body>
+</html>

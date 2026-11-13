@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ana Beauty Estéticas</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#FFE9F2;color:#7A1145}
+a{text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.topo{background:#FF2E8A;color:#fff;text-align:center;padding:10px;font-size:11px;letter-spacing:3px;font-weight:700}
+.menu-bar{background:#FFC2D9;position:sticky;top:0;z-index:100;box-shadow:0 4px 20px rgba(255,46,138,.25)}
+.menu-bar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding-top:14px;padding-bottom:14px}
+.logo{font-family:'Playfair Display';font-size:26px;color:#7A1145}
+.logo span{color:#FF2E8A;font-style:italic}
+.menu{display:flex;gap:6px;flex-wrap:wrap}
+.menu button{border:none;background:#fff;cursor:pointer;color:#7A1145;font-size:11px;letter-spacing:1px;font-weight:800;padding:10px 14px;border-radius:100px;font-family:'Inter'}
+.menu button:hover,.menu button.ativo{background:#FF2E8A;color:#fff}
+.hero{text-align:center;padding:60px 20px 40px}
+.selo{background:#fff;padding:11px 24px;border-radius:100px;font-size:11px;letter-spacing:3px;color:#FF2E8A;font-weight:800;box-shadow:0 8px 20px rgba(255,46,138,.20)}
+.hero h1{font-family:'Playfair Display';font-size:58px;font-weight:400;letter-spacing:4px;margin:22px 0 8px;color:#7A1145}
+.hero h1 i{color:#FF2E8A}
+.hero .sub{color:#FF2E8A;letter-spacing:5px;font-size:11px;font-weight:800}
+.hero .desc{color:#9A4A6E;font-size:16px;line-height:1.6;max-width:520px;margin:18px auto 28px}
+.btn-rosa{background:#FF2E8A;color:#fff;padding:16px 36px;border-radius:100px;font-weight:800;font-size:12px;letter-spacing:2px;display:inline-block;box-shadow:0 10px 25px rgba(255,46,138,.35);border:none;cursor:pointer}
+.btn-branco{background:#fff;color:#FF2E8A;padding:16px 36px;border-radius:100px;font-weight:800;font-size:12px;letter-spacing:2px;display:inline-block;margin-left:10px;border:none;cursor:pointer}
+.secao{display:none;padding:20px 0 60px}
+.secao.ativa{display:block}
+.titulo{text-align:center;margin-bottom:30px}
+.titulo span{color:#FF2E8A;letter-spacing:4px;font-size:11px;font-weight:800}
+.titulo h2{font-family:'Playfair Display';font-size:38px;font-weight:400;margin-top:8px;color:#7A1145}
+.titulo h2 i{color:#FF2E8A}
+.titulo p{color:#9A4A6E;font-size:14px;margin-top:8px}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:800px){.grade{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:42px}}
+@media(max-width:500px){.grade{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 12px 30px rgba(255,46,138,.18);color:#7A1145;cursor:pointer;border:2px solid #FFC2D9}
+.card img{width:100%;height:210px;object-fit:cover;display:block;background:#FFD6E7}
+.card .txt{padding:20px;text-align:left}
+.card .preco{background:#FFE9F2;color:#FF2E8A;padding:7px 13px;border-radius:100px;font-size:11px;font-weight:800}
+.card h3{font-family:'Playfair Display';font-size:22px;font-weight:400;margin:12px 0 6px}
+.card p{color:#9A4A6E;font-size:14px;line-height:1.6}
+.card .ver{color:#FF2E8A;font-weight:800;font-size:13px;margin-top:12px;display:block}
+.card2{background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 12px 30px rgba(255,46,138,.18);margin-bottom:22px;max-width:600px;margin-left:auto;margin-right:auto;text-align:center;border:2px solid #FFC2D9}
+.card2 img{width:100%;height:280px;object-fit:cover;display:block;background:#FFD6E7}
+.card2 .info{padding:24px}
+.card2 h3{font-family:'Playfair Display';font-size:24px;font-weight:400;color:#7A1145}
+.card2 .preco{font-size:32px;color:#FF2E8A;margin:10px 0;font-weight:800}
+.card2 p{color:#9A4A6E;font-size:14px}
+.btn{background:#FF2E8A;color:#fff;padding:14px 32px;border-radius:100px;font-weight:800;font-size:12px;display:inline-block;margin-top:14px;box-shadow:0 8px 20px rgba(255,46,138,.30)}
+.voltar{display:block;text-align:center;color:#FF2E8A;font-weight:800;margin-top:24px;cursor:pointer}
+.final{background:#FF2E8A;border-radius:28px;padding:44px 24px;text-align:center;color:#fff;margin-bottom:40px}
+.final h2{font-family:'Playfair Display';font-size:32px;font-weight:400}
+.final p{color:#FFE9F2;margin:14px 0 26px}
+.final button{background:#fff;color:#FF2E8A;padding:15px 36px;border-radius:100px;font-weight:800;font-size:12px;letter-spacing:2px;border:none;cursor:pointer}
+.rodape{text-align:center;color:#FF2E8A;font-size:12px;font-weight:700;padding-bottom:30px}
+.contato-box{background:#fff;border-radius:28px;padding:36px 28px;text-align:center;box-shadow:0 15px 35px rgba(255,46,138,.20);max-width:600px;margin:0 auto;border:2px solid #FFC2D9}
+.contato-box h3{font-family:'Playfair Display';font-size:26px;margin-bottom:10px;color:#7A1145}
+.contato-box p{color:#9A4A6E;font-size:14px;line-height:1.9}
+</style>
+</head>
+<body>
+
+<div class="topo">✦ AGENDA ABERTA • SÃO JOSÉ DOS CAMPOS • SEG A SÁB 9H ÀS 19H ✦</div>
+
+<div class="menu-bar">
+  <div class="container">
+    <div class="logo" onclick="mostrar('inicio')" style="cursor:pointer">Ana <span>Beauty</span></div>
+    <div class="menu">
+      <button id="b-inicio" class="ativo" onclick="mostrar('inicio')">INÍCIO</button>
+      <button id="b-cilios" onclick="mostrar('cilios')">CÍLIOS</button>
+      <button id="b-sobrancelha" onclick="mostrar('sobrancelha')">SOBRANCELHA</button>
+      <button id="b-spa" onclick="mostrar('spa')">SPA</button>
+      <button id="b-bronze" onclick="mostrar('bronze')">BRONZE</button>
+      <button id="b-depilacao" onclick="mostrar('depilacao')">DEPILAÇÃO</button>
+      <button id="b-massagem" onclick="mostrar('massagem')">MASSAGEM</button>
+      <button id="b-contato" onclick="mostrar('contato')">CONTATO</button>
+    </div>
+  </div>
+</div>
+
+<!-- INÍCIO -->
+<div id="inicio" class="secao ativa">
+  <div class="container">
+    <div class="hero">
+      <span class="selo">SÃO JOSÉ DOS CAMPOS • DESDE 2020</span>
+      <h1>ANA <i>BEAUTY</i></h1>
+      <p class="sub">TUDO ROSA • DELICADA • LUXUOSA</p>
+      <p class="desc">Cílios, sobrancelha, spa, bronze, depilação e massagem. Clique em um serviço abaixo e agende pelo WhatsApp.</p>
+      <button class="btn-rosa" onclick="mostrar('contato')">AGENDAR AGORA →</button>
+      <button class="btn-branco" onclick="mostrar('cilios')">VER SERVIÇOS</button>
+    </div>
+    <div class="titulo"><span>O QUE VOCÊ QUER HOJE?</span><h2>Escolha seu <i>momento rosa</i></h2></div>
+    <div class="grade">
+      <div class="card" onclick="mostrar('cilios')"><img src="figurassite/cilios1.jpg" alt="Cílios"><div class="txt"><span class="preco">A PARTIR DE R$120</span><h3>Cílios</h3><p>Fio a fio, volume brasileiro e mega volume luxo.</p><span class="ver">Ver página →</span></div></div>
+      <div class="card" onclick="mostrar('sobrancelha')"><img src="figurassite/sobrancelha1.jpg" alt="Sobrancelha"><div class="txt"><span class="preco">A PARTIR DE R$40</span><h3>Sobrancelha</h3><p>Design, henna, brow lamination e micro.</p><span class="ver">Ver página →</span></div></div>
+      <div class="card" onclick="mostrar('spa')"><img src="figurassite/spa1.jpg" alt="Spa"><div class="txt"><span class="preco">A PARTIR DE R$45</span><h3>Spa Delicado</h3><p>Facial, lábios, pés e spa completo.</p><span class="ver">Ver página →</span></div></div>
+      <div class="card" onclick="mostrar('bronze')"><img src="figurassite/bronze1.jpg" alt="Bronze"><div class="txt"><span class="preco">A PARTIR DE R$50</span><h3>Bronze</h3><p>Natural de fita, a jato e de gel.</p><span class="ver">Ver página →</span></div></div>
+      <div class="card" onclick="mostrar('depilacao')"><img src="figurassite/depilacao1.jpg" alt="Depilação"><div class="txt"><span class="preco">A PARTIR DE R$40</span><h3>Depilação</h3><p>Cera tradicional e laser definitivo.</p><span class="ver">Ver página →</span></div></div>
+      <div class="card" onclick="mostrar('massagem')"><img src="figurassite/massagem1.jpg" alt="Massagem"><div class="txt"><span class="preco">A PARTIR DE R$70</span><h3>Massagem</h3><p>Drenagem linfática e modeladora.</p><span class="ver">Ver página →</span></div></div>
+    </div>
+    <br><br>
+    <div class="final"><h2>Pronta pra ficar ainda mais linda?</h2><p>Chama no WhatsApp e garanta seu horário dessa semana.</p><button onclick="mostrar('contato')">FALAR COM A ANA →</button></div>
+    <div class="rodape">© 2026 Ana Beauty ♡ São José dos Campos - SP</div>
+  </div>
+</div>
+
+<!-- CÍLIOS -->
+<div id="cilios" class="secao">
+  <div class="container">
+    <div class="titulo"><span>CÍLIOS PREMIUM</span><h2>Cílios</h2><p>Toque em agendar e fale direto com a Ana</p></div>
+    <div class="card2"><img src="figurassite/cilios1.jpg"><div class="info"><h3>Fio a Fio Natural</h3><div class="preco">R$120</div><p>15 a 25 dias • Manutenção R$80</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Fio a Fio R$120">AGENDAR AGORA</a></div></div>
+    <div class="card2"><img src="figurassite/cilios2.jpg"><div class="info"><h3>Volume Brasileiro</h3><div class="preco">R$150</div><p>15 a 25 dias • Mais volumoso</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Volume Brasileiro R$150">AGENDAR AGORA</a></div></div>
+    <div class="card2"><img src="figurassite/cilios3.jpg"><div class="info"><span style="background:#FF2E8A;color:#fff;padding:6px 14px;border-radius:100px;font-size:11px;font-weight:800">MAIS PEDIDO • LUXO</span><h3 style="margin-top:12px">Mega Volume Luxo</h3><div class="preco">R$180</div><p>15 a 25 dias • Efeito glam</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Mega Volume R$180">AGENDAR AGORA</a></div></div>
+    <span class="voltar" onclick="mostrar('inicio')">← VOLTAR PARA INÍCIO</span>
+  </div>
+</div>
+
+<!-- SOBRANCELHA -->
+<div id="sobrancelha" class="secao">
+  <div class="container">
+    <div class="titulo"><span>DESIGN PERFEITO</span><h2>Sobrancelha</h2></div>
+    <div class="card2"><img src="figurassite/imagem6.jpeg"><div class="info"><h3>Design Simples</h3><div class="preco">R$40</div><p>Design + higienização</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Design Sobrancelha R$40">AGENDAR AGORA</a></div></div>
+    <div class="card2"><img src="figurassite/sobrancelha2.jpg"><div class="info"><h3>Design + Henna</h3><div class="preco">R$65</div><p>Preenchimento natural • Dura até 7 dias</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Henna R$65">AGENDAR AGORA</a></div></div>
+    <div class="card2"><img src="figurassite/sobrancelha3.jpg"><div class="info"><h3>Brow Lamination</h3><div class="preco">R$90</div><p>Fios alinhados e penteados</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Brow Lamination">AGENDAR AGORA</a></div></div>
+    <span class="voltar" onclick="mostrar('inicio')">← VOLTAR PARA INÍCIO</span>
+  </div>
+</div>
+
+<!-- SPA -->
+<div id="spa" class="secao">
+  <div class="container">
+    <div class="titulo"><span>MOMENTO DE CUIDADO</span><h2>Spa Delicado</h2></div>
+    <div class="card2"><img src="figurassite/spa1.jpg"><div class="info"><h3>Spa Facial</h3><div class="preco">R$90</div><p>Limpeza + hidratação + massagem facial</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Spa Facial">AGENDAR AGORA</a></div></div>
+    <div class="card2"><img src="figurassite/spa2.jpg"><div class="info"><h3>Spa dos Lábios</h3><div class="preco">R$45</div><p>Esfoliação + hidratação</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Spa Labios">AGENDAR AGORA</a></div></div>
+    <div class="card2"><img src="figurassite/spa3.jpg"><div class="info"><h3>Spa dos Pés</h3><div class="preco">R$70</div><p>Escalda pés + hidratação</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Spa Pes">AGENDAR AGORA</a></div></div>
+    <span class="voltar" onclick="mostrar('inicio')">← VOLTAR PARA INÍCIO</span>
+  </div>
+</div>
+
+<!-- BRONZE -->
+<div id="bronze" class="secao">
+  <div class="container">
+    <div class="titulo"><span>COR DOURADA</span><h2>Bronze</h2></div>
+    <div class="card2"><img src="figurassite/bronze1.jpg"><div class="info"><h3>Bronze de Fita</h3><div class="preco">R$70</div><p>Marquinha perfeita • Sol</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Bronze Fita">AGENDAR AGORA</a></div></div>
+    <div class="card2"><img src="figurassite/bronze2.jpg"><div class="info"><h3>Bronze a Jato</h3><div class="preco">R$90</div><p>Sem sol • Resultado na hora</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Bronze a Jato">AGENDAR AGORA</a></div></div>
+    <span class="voltar" onclick="mostrar('inicio')">← VOLTAR PARA INÍCIO</span>
+  </div>
+</div>
+
+<!-- DEPILAÇÃO -->
+<div id="depilacao" class="secao">
+  <div class="container">
+    <div class="titulo"><span>PELE LISINHA</span><h2>Depilação</h2></div>
+    <div class="card2"><img src="figurassite/depilacao1.jpg"><div class="info"><h3>Depilação com Cera</h3><div class="preco">R$40</div><p>Perna, axila, buço, virilha</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Depilacao Cera">AGENDAR AGORA</a></div></div>
+    <div class="card2"><img src="figurassite/depilacao2.jpg"><div class="info"><h3>Laser Definitivo</h3><div class="preco">R$120</div><p>Por sessão • Resultado duradouro</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Laser">AGENDAR AGORA</a></div></div>
+    <span class="voltar" onclick="mostrar('inicio')">← VOLTAR PARA INÍCIO</span>
+  </div>
+</div>
+
+<!-- MASSAGEM -->
+<div id="massagem" class="secao">
+  <div class="container">
+    <div class="titulo"><span>RELAXE E CUIDE-SE</span><h2>Massagem</h2></div>
+    <div class="card2"><img src="figurassite/massagem1.jpg"><div class="info"><h3>Drenagem Linfática</h3><div class="preco">R$90</div><p>Desinchaço • 50 min</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Drenagem">AGENDAR AGORA</a></div></div>
+    <div class="card2"><img src="figurassite/massagem2.jpg"><div class="info"><h3>Massagem Modeladora</h3><div class="preco">R$110</div><p>Modela + reduz medidas</p><a class="btn" href="https://wa.me/5512927663893?text=Oi Ana! Quero Modeladora">AGENDAR AGORA</a></div></div>
+    <span class="voltar" onclick="mostrar('inicio')">← VOLTAR PARA INÍCIO</span>
+  </div>
+</div>
+
+<!-- CONTATO - POR ÚLTIMO -->
+<div id="contato" class="secao">
+  <div class="container">
+    <div class="titulo"><span>FALA COM A GENTE</span><h2>Contato</h2><p>Agende seu horário pelo WhatsApp, é rapidinho!</p></div>
+    <div class="contato-box">
+      <h3>Ana Beauty Estéticas 💖</h3>
+      <p>📍 São José dos Campos - SP<br>🕐 Seg a Sáb • 9h às 19h<br>📱 WhatsApp: (12) 92766-3893<br>📸 Instagram: @anabeauty.esteticas</p>
+      <a class="btn" style="background:#FF2E8A;padding:16px 40px;font-size:14px" href="https://wa.me/5512927663893?text=Oi Ana! Quero agendar um horario">💬 CHAMAR NO WHATSAPP</a>
+      <br><br>
+      <a href="https://instagram.com" style="color:#FF2E8A;font-weight:800">Seguir no Instagram →</a>
+    </div>
+    <span class="voltar" onclick="mostrar('inicio')">← VOLTAR PARA INÍCIO</span>
+  </div>
+</div>
+
+<script>
+function mostrar(id){
+  document.querySelectorAll('.secao').forEach(s=>s.classList.remove('ativa'));
+  document.getElementById(id).classList.add('ativa');
+  document.querySelectorAll('.menu button').forEach(b=>b.classList.remove('ativo'));
+  var btn=document.getElementById('b-'+id);
+  if(btn) btn.classList.add('ativo');
+  window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>

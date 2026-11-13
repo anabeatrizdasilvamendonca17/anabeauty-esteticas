@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fale Conosco - Ana Beauty</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: PINK; (180deg, #fff0f5, #ffe4ec, #ffd6e7, #ffc2d6);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.pagina {
+    padding: 65px 20px;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cabecalho span {
+    color: #d17ba3;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.cabecalho h1 {
+    color: #4A1A3A;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.cabecalho p {
+    color: #80566d;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.detalhe {
+    width: 65px;
+    height: 2px;
+    background: #e75491;
+    margin: 20px auto;
+}
+
+.cartao {
+    background: LIGHTPINK;
+    max-width: 750px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(209, 123, 163, 0.20);
+}
+
+.informacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.item {
+    background: #fff0f5;
+    padding: 22px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.icone {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    color: #4A1A3A;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 9px;
+}
+
+.item p {
+    color: #80566d;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.agendamento {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.agendamento h2 {
+    color: #4A1A3A;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.agendamento p {
+    color: #80566d;
+    font-size: 14px;
+    margin-bottom: 22px;
+    line-height: 1.7;
+}
+
+.botao {
+    display: inline-block;
+    background: #e75491;
+    color: white;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 35px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #c93678;
+    transform: translateY(-3px);
+}
+
+.rodape {
+    text-align: center;
+    margin-top: 30px;
+    color: #7A1145;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+
+    .cartao {
+        padding: 25px 18px;
+    }
+
+    .informacoes {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho h1 {
+        font-size: 34px;
+    }
+
+    .botao {
+        font-size: 11px;
+        padding: 15px 20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="pagina">
+
+    <div class="cabecalho">
+
+        <span>ANA BEAUTY</span>
+
+        <h1>Fale Conosco</h1>
+
+        <div class="detalhe"></div>
+
+        <p>
+            Será um prazer atender você!
+            <br>
+            Entre em contato para agendar seu horário ou tirar suas dúvidas.
+        </p>
+
+    </div>
+
+
+    <div class="cartao">
+
+        <div class="informacoes">
+
+            <div class="item">
+
+                <div class="icone">📧</div>
+
+                <h3>E-mail</h3>
+
+                <p>contato@anabeauty.com.br</p>
+
+            </div>
+
+
+            <div class="item">
+
+                <div class="icone">📞</div>
+
+                <h3>Telefone</h3>
+
+                <p>(12) 9967-9838</p>
+
+            </div>
+
+
+            <div class="item">
+
+                <div class="icone">📍</div>
+
+                <h3>Endereço</h3>
+
+                <p>São José dos Campos - SP</p>
+
+            </div>
+
+
+            <div class="item">
+
+                <div class="icone">⏰</div>
+
+                <h3>Horário de Atendimento</h3>
+
+                <p>Segunda a Sábado</p>
+
+                <p>Das 9h às 19h</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="agendamento">
+
+            <div class="detalhe"></div>
+
+            <h2>Vamos agendar seu momento?</h2>
+
+            <p>
+                Fale diretamente conosco pelo WhatsApp
+                e reserve seu horário.
+            </p>
+
+            <a class="botao"
+            href="https://wa.me/551299679838?text=Oi%20Ana!%20Quero%20agendar%20um%20horario"
+            target="_blank">
+
+                ♡ AGENDAR PELO WHATSAPP ♡
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="rodape">
+
+        © 2026 Ana Beauty ♡ São José dos Campos - SP
+
+    </div>
+
+</div>
+
+</body>
+</html>

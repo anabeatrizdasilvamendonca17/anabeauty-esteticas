@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Spa - Ana Beauty</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: pink; (180deg, #fff0f5, #ffe4ec, #ffd6e7, #ffc2d6);
+    font-family: Arial, sans-serif;
+    color: #7A1145;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    text-align: center;
+    padding: 35px 20px 20px;
+}
+
+.apresentacao span {
+    color: #D16A8A;
+    letter-spacing: 5px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.apresentacao h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 34px;
+    color: #7A1145;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.apresentacao p {
+    color: #9A4A6E;
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 15px 20px 35px;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.servico {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(122,17,69,0.12);
+    transition: 0.3s;
+}
+
+.servico:hover {
+    transform: translateY(-4px);
+}
+
+/* FOTOS */
+
+.servico img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    display: block;
+    background: #fff0f5;
+}
+
+/* INFORMAÇÕES */
+
+.informacao {
+    padding: 18px;
+    text-align: center;
+}
+
+.selo {
+    display: inline-block;
+    background: #FFE4EC;
+    color: #D16A8A;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.informacao h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 21px;
+    color: #7A1145;
+    margin-bottom: 9px;
+}
+
+.informacao p {
+    color: #9A4A6E;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* DETALHES */
+
+.detalhe {
+    background: #FFF0F5;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 11px;
+    line-height: 1.8;
+    color: #9A4A6E;
+}
+
+/* PREÇOS */
+
+.preco {
+    color: #FF2E8A;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0 14px;
+}
+
+.preco small {
+    font-size: 10px;
+    color: #9A4A6E;
+    display: block;
+    font-weight: normal;
+}
+
+/* BOTÕES */
+
+.botao {
+    display: block;
+    background: #FF2E8A;
+    color: white;
+    padding: 11px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #D16A8A;
+}
+
+/* MENSAGEM FINAL */
+
+.mensagem {
+    text-align: center;
+    padding: 22px 15px;
+    background: white;
+    border-radius: 18px;
+    margin: 25px 0 10px;
+    box-shadow: 0 6px 18px rgba(122,17,69,0.08);
+}
+
+.mensagem h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px;
+    color: #7A1145;
+    margin-bottom: 8px;
+}
+
+.mensagem p {
+    color: #9A4A6E;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    background: #25D366;
+    color: white;
+    padding: 13px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 21px;
+    box-shadow: 0 5px 15px #999;
+}
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+
+    .apresentacao h1 {
+        font-size: 29px;
+    }
+
+    .servicos {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .servico img {
+        height: 190px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="apresentacao">
+
+    <span>RELAXAMENTO • BELEZA • BEM-ESTAR</span>
+
+    <h1>Spa Delicado</h1>
+
+    <p>
+        Reserve um momento especial para cuidar de você.
+        Conheça nossos tratamentos de beleza e relaxamento.
+    </p>
+
+</div>
+
+
+<div class="container">
+
+<div class="servicos">
+
+    <!-- SPA FACIAL -->
+
+    <div class="servico">
+
+        <img src="images (2).jpeg" alt="Spa facial">
+
+        <div class="informacao">
+
+            <span class="selo">CUIDADO FACIAL</span>
+
+            <h2>Spa Facial Delicado</h2>
+
+            <p>
+                Cuidado especial para o rosto, com limpeza,
+                massagem e hidratação.
+            </p>
+
+            <div class="detalhe">
+                ✓ Limpeza facial<br>
+                ✓ Massagem relaxante<br>
+                ✓ Hidratação da pele
+            </div>
+
+            <div class="preco">
+                <small>Valor do procedimento</small>
+                R$80
+            </div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar%20Spa%20Facial">
+            AGENDAR AGORA
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- SPA DOS LÁBIOS -->
+
+    <div class="servico">
+
+        <img src="images (3).jpeg" alt="Spa dos lábios">
+
+        <div class="informacao">
+
+            <span class="selo">HIDRATAÇÃO E DELICADEZA</span>
+
+            <h2>Spa dos Lábios</h2>
+
+            <p>
+                Cuidado especial com esfoliação suave
+                e hidratação dos lábios.
+            </p>
+
+            <div class="detalhe">
+                ✓ Esfoliação suave<br>
+                ✓ Hidratação profunda<br>
+                ✓ Cuidado especial
+            </div>
+
+            <div class="preco">
+                <small>Valor do procedimento</small>
+                R$45
+            </div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar%20Spa%20dos%20Labios">
+            AGENDAR AGORA
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- SPA DOS PÉS -->
+
+    <div class="servico">
+
+        <img src="images (4).jpeg" alt="Spa dos pés">
+
+        <div class="informacao">
+
+            <span class="selo">RELAXAMENTO</span>
+
+            <h2>Spa dos Pés</h2>
+
+            <p>
+                Um momento de descanso com escalda-pés,
+                esfoliação e massagem relaxante.
+            </p>
+
+            <div class="detalhe">
+                ✓ Escalda-pés<br>
+                ✓ Esfoliação<br>
+                ✓ Massagem relaxante
+            </div>
+
+            <div class="preco">
+                <small>Valor do procedimento</small>
+                R$65
+            </div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar%20Spa%20dos%20Pes">
+            AGENDAR AGORA
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- SPA COMPLETO -->
+
+    <div class="servico">
+
+        <img src="completo.jpg" alt="Spa completo">
+
+        <div class="informacao">
+
+            <span class="selo">EXPERIÊNCIA COMPLETA</span>
+
+            <h2>Spa Completo</h2>
+
+            <p>
+                Uma experiência especial com cuidados
+                faciais, lábios e relaxamento dos pés.
+            </p>
+
+            <div class="detalhe">
+                ✓ Spa facial<br>
+                ✓ Spa dos lábios<br>
+                ✓ Spa dos pés
+            </div>
+
+            <div class="preco">
+                <small>Valor do procedimento</small>
+                R$150
+            </div>
+
+            <a class="botao"
+            href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar%20Spa%20Completo">
+            AGENDAR AGORA
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="mensagem">
+
+    <h2>Você merece esse momento!</h2>
+
+    <p>
+        Tire um tempo para você, renove suas energias
+        e cuide da sua beleza com carinho.
+    </p>
+
+</div>
+
+</div>
+
+
+<a class="whatsapp"
+href="https://wa.me/5512927663893?text=Oi%20Ana!%20Quero%20agendar">
+💬
+</a>
+
+</body>
+</html>
